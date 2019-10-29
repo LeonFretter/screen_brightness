@@ -10,7 +10,7 @@ brightness = sys.argv[1]
 if float(brightness) < .2:
     print('Dude, dont you want to be able to read something?')
     exit()
-else if float(brightness) > 1:
+elif float(brightness) > 1:
     print('Ahh, thats not such a good idea!')
     exit()
 

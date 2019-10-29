@@ -7,8 +7,11 @@ if len(sys.argv) != 2:
 
 brightness = sys.argv[1]
 
-if brightness < .2:
+if float(brightness) < .2:
     print('Dude, dont you want to be able to read something?')
+    exit()
+else if float(brightness) > 1:
+    print('Ahh, thats not such a good idea!')
     exit()
 
 cmd = Popen(['xrandr', '-q'], stdout=PIPE, stderr=PIPE, stdin=PIPE)
